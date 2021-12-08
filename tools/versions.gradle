@@ -1,0 +1,28 @@
+// For suspend functions
+def coroutines = [:]
+coroutines.android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0"
+
+// RX Java
+def rx = [:]
+rx.android = "io.reactivex.rxjava2:rxjava:2.2.21"
+rx.java = "io.reactivex.rxjava2:rxandroid:2.1.1"
+
+// To call any API/endpoints
+def retrofit = [:]
+retrofit.retrofit2 = "com.squareup.retrofit2:retrofit:2.9.0"
+retrofit.gson_converter = "com.squareup.retrofit2:converter-gson:2.9.0"
+retrofit.gson = "com.google.code.gson:gson:2.8.8"
+retrofit.okhttp = "com.squareup.okhttp3:okhttp:4.9.0"
+
+// For ViewModels
+def viewmodel = [:]
+viewmodel.vm = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
+
+///////////////////////////////////
+def dependencies = [:]
+dependencies.coroutines = coroutines
+dependencies.rx = rx
+dependencies.retrofit = retrofit
+dependencies.viewmodel = viewmodel
+
+ext.deps = dependencies
