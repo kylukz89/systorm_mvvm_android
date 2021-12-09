@@ -1,3 +1,9 @@
+// Kotlin and XML dep...
+def basics = [:]
+basics.ktx = 'androidx.core:core-ktx:1.7.0'
+basics.appcompat = 'androidx.appcompat:appcompat:1.4.0'
+basics.material = 'com.google.android.material:material:1.4.0'
+
 // For suspend functions
 def coroutines = [:]
 coroutines.android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0"
@@ -18,11 +24,25 @@ retrofit.okhttp = "com.squareup.okhttp3:okhttp:4.9.0"
 def viewmodel = [:]
 viewmodel.vm = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
 
+// Koin - dep. injection
+def koin = [:]
+koin.android = "io.insert-koin:koin-android:2.2.3"
+koin.viewmodel = "io.insert-koin:koin-androidx-viewmodel:2.2.3"
+
+// For tests unit
+def units = [:]
+units.junit = 'junit:junit:4.+'
+units.ext = 'androidx.test.ext:junit:1.1.3'
+units.espresso = 'androidx.test.espresso:espresso-core:3.4.0'
+
 ///////////////////////////////////
 def dependencies = [:]
+dependencies.basics = basics
 dependencies.coroutines = coroutines
 dependencies.rx = rx
 dependencies.retrofit = retrofit
 dependencies.viewmodel = viewmodel
+dependencies.koin = koin
+dependencies.units = units
 
 ext.deps = dependencies
