@@ -10,3 +10,5 @@ rootProject.name = "Systorm"
 include ':app'
 include ':base'
 include ':account'
+include ':home'
+include ':test'
